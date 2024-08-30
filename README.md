@@ -5,7 +5,7 @@ Create test web server by Java Spring Boot with database PostgreSQL.
 
 The following technologies and applications were used to create the application:  
 - Maven - project manager.
-- Spring framework: Spring WEB, Data JPA, Thymeleaf, Lombok, Swagger.
+- Spring Boot: Spring WEB, Data JPA, Thymeleaf, Lombok, Swagger.
 - pgAdmin4 - for create database.
 - Postman - for send get / put / post / delete requests to the server.
 - Docker - for build the app to a container.
