@@ -15,3 +15,5 @@ The application should have the following functionality:
 - Landing page of Teleport Travel company with form to send a request;
 - By the form send a request of a new client.
 - Handle Get, Post, Put, Delete requests by /api.
+
+![landing.png](materials%2Fpictures%2Flanding.png)
