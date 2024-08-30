@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>&laquo;Teleport&raquo; - travel company. official site</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+        <style>
+            * {
+                margin: 0;
+                box-sizing: border-box;
+            }
+
+            section {
+                width: 1168px;
+                margin: 0 auto;
+            }
+
+            h1 {
+                font-family: 'Roboto', sans-serif;
+                font-size: 55px;
+                font-weight: 500;
+                line-height: 70px;
+                letter-spacing: 0em;
+                text-align: left;
+                margin: 35px 0;
+            }
+
+            h2 {
+                font-family: 'Roboto', sans-serif;
+                font-size: 40px;
+                font-weight: 500;
+                line-height: 54px;
+                letter-spacing: 0em;
+                text-align: left;
+                
+            }
+
+            .main-picture {
+                width: 100%;
+                border-radius: 20px;
+                margin-bottom: 25px;
+            }
+
+            .description {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 25px;
+            }
+
+            .description p {
+                width: 45%;
+                font-family: 'Roboto', sans-serif;
+                font-size: 22px;
+                font-weight: 400;
+                line-height: 30px;
+                letter-spacing: 0em;
+                text-align: left;
+            }
+
+            .form-container {
+                background-color: #F1F1F1;
+                padding: 37px 50px;
+                border-radius: 20px;
+                margin-bottom: 30px;
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .form-container > * {
+                width: 50%;
+            }
+
+            .form {
+                width: 416px;
+            }
+
+            .form-field {
+                width: 100%;
+                font-family: 'Roboto', sans-serif;
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 30px;
+                letter-spacing: 0em;
+                text-align: left;
+                border: 0;
+                border-radius: 10px;
+                padding: 11px 24px;
+                margin-bottom: 8px;
+            }
+
+            .form-botton {
+                border: 0;
+                border-radius: 10px;
+                background-color: #3D3BFF;
+                color: white;
+                font-family: 'Roboto', sans-serif;
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 30px;
+                letter-spacing: 0em;
+                text-align: left;
+                padding: 11px 54px;
+                cursor: pointer;
+                margin-top: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <section>
+            <h1>Tour to Island - &laquo;Teleport&raquo; travel company</h1>
+        </section>
+        <section>
+            <img class=main-picture th:src="@{/images/island.png}">
+        </section>
+        <section class="description">
+            <p>Вас ждет незабываемый тур на&nbsp;остров мечты. Песчаные пляжи среди цветущих коралловых рифов.</p>
+            <p>Для самых смелых туристов есть возможность отправиться в&nbsp;<b>полет на&nbsp;параплане.</b></p>
+        </section>
+        <section class="form-container">
+            <h2>Оставьте заявку и&nbsp;забронируйте тур по&nbsp;минимальной цене.</h2>
+            <form class="form">
+                <input class="form-field" type="text" placeholder="Имя">
+                <input class="form-field" type="tel" placeholder="Телефон">
+                <input class="form-field" type="email" placeholder="Email">
+                <button class="form-botton">Записаться</button>
+            </form>
+        </section>
+    </body>
+</html>
